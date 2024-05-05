@@ -1,0 +1,22 @@
+{
+  "name": "mentionbot",
+  "description": "Get mentioned when certain phrases (such as your name) appear in Discord messages",
+  "repository": "https://github.com/matthewdias/mentionbot",
+  "addons": [{ "plan": "heroku-postgresql:hobby-dev" }],
+  "env": {
+    "DATABASE_URL": {
+      "description": "Postgres connection url. Don't set to use the provisioned Heroku Postgres",
+      "required": false
+    },
+    "CLIENT_ID": {
+      "description": "Discord bot client. Get one at https://discordapp.com/developers/applications/me/create"
+    },
+    "TOKEN": {
+      "description": "Discord bot token. Get one at https://discordapp.com/developers/applications/me/create"
+    },
+    "SENTRY_DSN": {
+      "description": "Sentry reporting URL. Get one at https://sentry.io",
+      "required": false
+    }
+  }
+}
